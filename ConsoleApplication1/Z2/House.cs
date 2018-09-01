@@ -26,13 +26,12 @@ namespace Z2
         public House Clone()
         {
             return new House(this.floors, this.type);
-        } 
+        }
 
-        //public House DeepClone()
-        //{
-            // return new House(this.floors, this.type) as object;
-            
-        //}
+        public object DeepClone()
+        {
+            return new House(this.floors, this.type) as object;
+        }
 
         public void show()
         {

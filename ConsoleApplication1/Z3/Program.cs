@@ -19,8 +19,13 @@ namespace Z3
     {
         static void Main(string[] args)
         {
+            Data today = new Data();
+            today.show();
 
-            
+
+
+
+            Console.ReadLine();
         }
     }
 }

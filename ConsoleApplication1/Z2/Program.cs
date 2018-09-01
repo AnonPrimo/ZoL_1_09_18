@@ -18,11 +18,27 @@ namespace Z2
             Console.WriteLine();
             Console.WriteLine("Clone");
             clone.show();
+
             clone.floors = 3;
             clone.type = "cotegge";
             Console.WriteLine();
+
             Console.WriteLine("Changed clone");
             clone.show();
+
+            Console.WriteLine();
+
+            House deepclone = (House)h.DeepClone();
+            Console.WriteLine("Deep clone");
+            deepclone.show();
+
+            deepclone.floors = 5;
+            deepclone.type = "build";
+            Console.WriteLine();
+
+            Console.WriteLine("Changed deep clone");
+            deepclone.show();
+
 
             Console.ReadLine();
         }
